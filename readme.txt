@@ -3,6 +3,7 @@ Contributors: stianlik
 Tags: pdf,thumbnail,generator
 License: WTFPL
 License URI: http://www.wtfpl.net/
+Stable tag: 0.0.2
 
 Generates thumbnail for PDF-files when they are uploaded using the same 
 mechanism as normal images.
