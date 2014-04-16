@@ -6,8 +6,7 @@ License URI: http://www.wtfpl.net/
 Stable tag: 0.0.3
 
 This plugin generates thumbnails for PDF files on upload. The thumbnail is a
-picture of the first page of uploaded document, and will appear as an image in
-your media gallery. 
+picture of the first page of uploaded document.
 
 == Description ==
 
