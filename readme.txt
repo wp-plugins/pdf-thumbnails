@@ -3,7 +3,7 @@ Contributors: stianlik
 Tags: pdf,thumbnail,generator
 License: WTFPL
 License URI: http://www.wtfpl.net/
-Stable tag: 0.0.2
+Stable tag: 0.0.3
 
 This plugin generates thumbnails for PDF files on upload. The thumbnail is a
 picture of the first page of uploaded document, and will appear as an image in
