@@ -24,3 +24,29 @@ on how you can use thumbnails efficiently.
 
 - ImageMagick must be installed (http://www.php.net/manual/en/book.imagick.php) to generate thumbnails
 - GhostScript must be installed to read PDF-files
+
+== TODO ==
+
+Add generated image to media browser after upload. 
+
+Outline of an implementation based on the javascript media API:
+
+// New uploads
+wp.Uploader.queue.on('add', function (attachment) {
+
+    if (attachment.subtype !== 'pdf') {
+        return;
+    }
+
+    findThumbnailFor(attachment.ID).then(function (data) {
+
+        // Add attachment thumbnail to browser
+        var attachment = wp.media.model.Attachment.get(id)
+        attachment.fetch().done(function () {
+            wp.media.editor.open().state().get('library').add(generated attachment)
+        });
+
+    });
+});
+
+Filter: ajax_query_attachments_args
