@@ -83,10 +83,18 @@ class PdfThumbnailsPlugin
     
     private function insertThumbnailAttachment($attachmentId, $uploaded)
     {
+        // Get the the original attachement
+        $pdfAttachment = get_post($attachmentId);
+        if (!$pdfAttachment) {
+            return;
+        }
+        
+        // Create thumbnail
         $attachment = array(
             'post_mime_type' => 'image/jpeg',
             'post_type' => 'attachment',
             'post_content' => '',
+            'post_title' => $pdfAttachment->post_title . '-thumbnail'
         );
         $thumbnailId = wp_insert_attachment($attachment, $uploaded['file']);
         $thumbnailMetadata = wp_generate_attachment_metadata($thumbnailId, $uploaded['file']);
