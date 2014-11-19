@@ -16,7 +16,7 @@ PDF is uploaded. Generated thumbnail is an image of the first page in the
 uploaded document and is named `PDFNAME-thumbnail`, where `PDFNAME` is replaced
 by uploaded document filename.
 
-Generated thumbnails are equivallent to [featured
+Generated thumbnails are equivalent to [featured
 images](https://codex.wordpress.org/Post_Thumbnails) so that common thumbnail
 functions like `get_post_thumbnail_id()` can be used for PDF attachments. See
 [Post Thumbnails](https://codex.wordpress.org/Post_Thumbnails) for information
