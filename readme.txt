@@ -3,7 +3,7 @@ Contributors: stianlik
 Tags: pdf,thumbnail,generator
 License: WTFPL
 License URI: http://www.wtfpl.net/
-Stable tag: 0.0.3
+Stable tag: 0.0.4
 Tested up to: 4.0
 
 This plugin generates thumbnails for PDF files on upload. The thumbnail is a
@@ -24,6 +24,16 @@ on how you can use thumbnails efficiently.
 
 - ImageMagick must be installed (http://www.php.net/manual/en/book.imagick.php) to generate thumbnails
 - GhostScript must be installed to read PDF-files
+
+The process of installing ImageMagick with GhostScript support can differ
+
+1. Install ghostscript
+2. Install imagemagick, compiled with ghostscript support
+3. Install PHP extension for imagemagick (can use pecl)
+4. Restart web server for changes to take effect
+
+See [Support](https://wordpress.org/support/topic/nothing-but-error-messages) for 
+more resources and tips on how this can be done in Windows, Linux and OSX.
 
 == TODO ==
 
