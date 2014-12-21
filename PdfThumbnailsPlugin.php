@@ -94,7 +94,8 @@ class PdfThumbnailsPlugin
             'post_mime_type' => 'image/jpeg',
             'post_type' => 'attachment',
             'post_content' => '',
-            'post_title' => $pdfAttachment->post_title . '-thumbnail'
+            'post_title' => $pdfAttachment->post_title . '-thumbnail',
+            'post_parent' => $pdfAttachment->ID
         );
         $thumbnailId = wp_insert_attachment($attachment, $uploaded['file']);
         $thumbnailMetadata = wp_generate_attachment_metadata($thumbnailId, $uploaded['file']);

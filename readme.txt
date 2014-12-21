@@ -2,9 +2,9 @@
 Contributors: stianlik
 Tags: pdf,thumbnail,generator
 License: GPLv3
-License URI: http://www.wtfpl.net/
-Stable tag: 0.0.5
-Tested up to: 4.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Stable tag: 0.0.6
+Tested up to: 4.1
 
 This plugin generates a thumbnail everytime you upload a PDF attachment.
 Generated thumbnail is an image of the first page in uploaded document.
