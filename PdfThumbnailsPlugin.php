@@ -100,7 +100,7 @@ class PdfThumbnailsPlugin
         $thumbnailId = wp_insert_attachment($attachment, $uploaded['file']);
         $thumbnailMetadata = wp_generate_attachment_metadata($thumbnailId, $uploaded['file']);
         wp_update_attachment_metadata($thumbnailId, $thumbnailMetadata);
-        update_post_meta($attachmentId, '_thumbnail_id', $thumbnailId);
+        set_post_thumbnail($attachmentId, $thumbnailId);
         
         // Mark generated thumbnails for future reference
         update_post_meta($thumbnailId, 'PdfThumbnailsPlugin', true);
