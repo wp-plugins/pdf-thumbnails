@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PDF Thumbnails
  * Description: Generates thumbnail for PDF-files when they are added.
- * Version: 0.0.6
+ * Version: 1.0.0
  * Author: Stian Liknes
  * License: GPLv3
  */
