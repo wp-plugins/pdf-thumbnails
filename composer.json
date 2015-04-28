@@ -1,7 +1,7 @@
 {
     "name": "foogile/wordpress-pdf-thumbnails",
     "description": "Plugin for generating PDF thumbnails in WordPress",
-    "license": "WTFPL",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Stian Liknes",
